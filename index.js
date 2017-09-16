@@ -2,14 +2,13 @@
 const http = require('http');
 
 // Create server
-const server = http.createServer(function (req, res) {
-
+const server = http.createServer(function(req, res) {
   // Set the status and headers
-  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
 
   // Write the body of the response
   res.end('Hello World');
-})
+});
 
 // Make server listen on port 8080
 // (if have multiple ip addresses then can write after comma;
